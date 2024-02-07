@@ -5,13 +5,15 @@
 
     <div class="container_menu">
         <ul class="menu_list">
-            <li class="items"> Home </li>
-            <li class="items"> Service </li>
+            <li class="items" routerLink="/home" routerLinkActive="activeMenu"> Home </li>
+            <li class="items" routerLink="/service" routerLinkActive="activeMenu"> Service </li>
         </ul>
     </div>
 
     <div class="container_user">
-        <a class="login userHeaderText"> Login </a>
-        <a class="register userHeaderText"> Register </a>
+        <a class="login userHeaderText" routerLink="/login" routerLinkActive="active"> Login </a>
+        <a class="register userHeaderText" routerLink="/register" routerLinkActive="active"> Register </a>
+        
     </div>
 </div>
+
