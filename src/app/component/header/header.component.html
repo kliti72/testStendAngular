@@ -1,0 +1,35 @@
+<div class="header">
+    
+    <div class="container_logo">
+        <app-title 
+            [classi] = "['logo-text']"
+            [title] = "'Logo Component'"
+        ></app-title>    
+    </div>
+
+    <div class="container_menu">
+        <app-ul-list >
+        </app-ul-list>
+    </div>
+
+    <div class="container_user">
+
+        <app-button
+            [textInfo] = "'Login'"
+            [classes] = "['login', 'userHeaderText']"
+            [routerLink] = "'/login'"
+            [routerLinkActive] = "'active'"
+            >
+        </app-button>
+
+        <app-button
+            [textInfo] = "'Registrati'"
+            [classes] = "['register', 'userHeaderText']"
+            [routerLink] = "'/register'"
+            [routerLinkActive] = "'active'"
+            >
+        </app-button>
+        
+    </div>
+</div>
+

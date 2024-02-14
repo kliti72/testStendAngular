@@ -3,9 +3,9 @@
     display: block;
     padding: 1em;
     width: 40%;
-    border-top: 2px solid rgb(89, 200, 10);
     margin: auto;
     margin-top: 3.5em;
+    font-weight: bold;
 }
 
 .inputBox {
@@ -35,8 +35,7 @@
 }
 
 .inputLogin::placeholder {
-    font-size: 1em;
-    letter-spacing: -0.06em;
+    font-size: 0.8em;
 }
 
 .loginTitle {
@@ -48,7 +47,7 @@
     background-color: white;
     margin: 0.3em;
     font-size: 1.5em;
-    background-color: rgb(213, 139, 11);
+    background-color: rgb(40, 210, 14);
     color: white;
     padding: 0.3em;
     padding-left: 1.5em;
@@ -60,4 +59,10 @@
 .status {
     display: block;
     margin: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+    #login {
+        width: 80%;
+    }
 }

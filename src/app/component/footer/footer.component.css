@@ -1,0 +1,10 @@
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    width: 100%;
+    padding-left: 2em;
+}

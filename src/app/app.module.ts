@@ -1,38 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { UserCardComponent } from './user-card/user-card.component';
-import { CustomButtonComponent } from './custom-button/custom-button.component';
-import { LoginComponent } from './login/login.component';
-import { AppLoginButtonComponent } from './app-login-button/app-login-button.component';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { LoginComponent } from './pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ServiceComponent } from './pages/service/service.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { TitleComponent } from './component/title/title.component';
+import { ButtonComponent } from './component/button/button.component';
+import { UlListComponent } from './component/ul-list/ul-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    UserCardComponent,
-    CustomButtonComponent,
     LoginComponent,
-    AppLoginButtonComponent
+    HomeComponent,
+    ServiceComponent,
+    RegisterComponent,
+    TitleComponent,
+    ButtonComponent,
+    UlListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   exports: [
     FooterComponent,
-    UserCardComponent,
-    CustomButtonComponent,
-    AppLoginButtonComponent,
-    
+    ButtonComponent,
   ]
 })
 export class AppModule { }

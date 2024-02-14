@@ -1,0 +1,8 @@
+<ul [ngClass]="classes" >    
+    <li *ngFor="let item of items" 
+        [ngClass]="item.classes" 
+        routerLink="{{ item.routerLink }}" 
+        routerLinkActive=" {{ item.routerLinkActive }}"> 
+        {{ item.text }} 
+    </li>
+</ul>

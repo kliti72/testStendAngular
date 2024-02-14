@@ -1,34 +1,26 @@
 .header {
     display: flex;
     flex-direction: row;
-    margin: 1em;
+    margin: auto;
+    width: fit-content;
 }
 
 .logo-text {
     font-weight: bold;
     font-size: 1.5em;
-}
-
-.container_logo {
-    display: flex;
-    flex: 1;
-}
-
-.container_menu {
-    display: flex;
-    flex: 8;
-    margin: 0;
-    padding: 0;
+    margin: 0.5em;
+    display: inline-block;
+    color: rgb(255, 123, 0);
+    
 }
 
 .items {
      margin: 0.2em;
      font-size: 1em;
-     background-color: rgba(214, 128, 6, 0.382);
      padding: 0.3em;
      padding-left: 0.8em;
      padding-right: 0.8em;
-     color: white;
+     color: rgb(0, 0, 0);
      border-radius: 5px;
      transition: all 0.5;
 }
@@ -36,10 +28,12 @@
 .items:hover {
     background-color: rgba(255, 151, 4, 0.967);
     cursor: pointer;
+    
 }
 
 .activeMenu {
     background-color: rgba(255, 151, 4, 0.967);
+    color: white;
 }
 
 .menu_list {
@@ -48,12 +42,7 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-}
-
-
-.container_user {
-    display: flex;
-    flex: end;
+    font-size: 1.5em;
 }
 
 .userHeaderText {
@@ -104,3 +93,43 @@
     color: black;
     font-weight: bold;
 }
+
+@media screen and (max-width: 800px){
+    .header {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 1.5em;
+        width: fit-content;
+        margin: auto;
+    }
+    .logo-text {
+        font-size: 2.5em;
+    }
+    
+    .container_user {
+        margin-top: 0.5em;
+        border-top: 5px solid rgba(176, 176, 176, 0.32);
+    }
+    .userHeaderText {
+        display: block;
+        margin-top: 1em;
+    }
+    .menu_list {
+        font-size: 1.7em;
+    }
+    
+
+}
+
+
+
+
+.container_user {
+    display: flex;
+    margin-top: 1em;
+    flex: end;
+}
+

@@ -1,0 +1,14 @@
+[
+    {
+        "classes" : ["items"],
+        "routerLink" : "/home",
+        "routerLinkActive" : "activeMenu",
+        "text" : "home"
+    },
+    {
+        "classes" : ["items"],
+        "routerLink" : "/service",
+        "routerLinkActive" : "activeMenu",
+        "text" : "service"
+    }
+]
