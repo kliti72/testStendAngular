@@ -1,1 +1,39 @@
-<p>home works!</p>
+<div class="border">
+
+<app-input
+    (change)="updateTitle($event)"
+    [type] = "'text'"
+    [placeholder] = "'Scrivi qui il tuo titolo'"
+    [name] = "title"
+>
+</app-input>
+
+<textarea 
+    [(ngModel)] = "value"
+    (ngModelChange)="updateCounter($event)"
+    type="t" 
+    class="inputTextContainer" 
+    placeholder="Scrivi la tua nota">
+</textarea>
+
+<app-counter 
+[conteggio] = "conteggio"
+> </app-counter>
+
+<app-button 
+    (click)="saveNote()"
+    [textInfo] = "'Salva questa nota'"
+    [classes] = "['submitText']"
+    [routerLink] = "'/home'"
+    [routerLinkActive] = "'/homeActive'">
+</app-button>
+
+<app-notify
+    [classes] = "notifica ? ['notify', 'display'] : ['notify']"
+    [contenutoNotifica] = "'Registrazione nota avvenuta con successo!'"
+>
+
+</app-notify>
+
+    
+</div>

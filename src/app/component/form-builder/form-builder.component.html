@@ -1,0 +1,17 @@
+<form id =" {{ idForm }}">
+    <div class="inputBox" *ngFor="let input of input" > 
+        <a class="inputText"> {{ input.name }} </a>
+        <input 
+        class="inputLogin"
+        [ngClass]="input.classes" 
+        type="{{ input.type }}"
+        placeholder="{{ input.placeholder}}"
+        >
+    </div>
+    <button *ngFor="let button of button" class="submit" 
+        id = "{{ button.id }}"
+        type = " {{ button.type }} "
+        (click) = " button.clickAction "
+    > {{ button.text }} </button>
+</form>
+

@@ -1,0 +1,37 @@
+.notify {
+
+    background-color: green;
+    color: white;
+    width: 60%;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+    margin: 0.8em;
+    border-radius: 10px;
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: hidden;
+    margin: auto;
+}
+
+.titleNotify {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.descriptionNotify {
+    display: block;
+    font-size: 1em;
+    text-transform: capitalize;
+    text-align: justify;
+    justify-content:safe;
+}
+
+.display {
+    opacity: 100;
+}

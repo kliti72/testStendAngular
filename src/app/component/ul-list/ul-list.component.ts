@@ -17,7 +17,6 @@ export class UlListComponent implements OnInit {
     routerLinkActive : string,
     text : string
   }[] = []
-
     
   constructor(private http: HttpClient){}
 

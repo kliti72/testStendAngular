@@ -1,0 +1,9 @@
+.counter {
+    display: block;
+    margin: 1em;
+    letter-spacing: -0.03em;
+}
+
+.conteggio {
+    font-weight: bold;
+}

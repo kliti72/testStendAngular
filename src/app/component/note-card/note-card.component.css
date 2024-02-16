@@ -1,0 +1,33 @@
+.card {
+    display: block;
+    margin: 0;
+    border: 2px solid rgba(128, 128, 128, 0.353);
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+
+}
+
+.titleCard {
+    display: block;
+    font-weight: bold;
+}
+
+.descriptionCard {
+    display: block;
+    text-transform: capitalize;
+    justify-content: space-evenly;
+
+}
+.readNote {
+    background-color: orange;
+    padding: 0.5em;
+    margin-top: 1em;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.readNote:hover {
+    cursor: pointer;
+    color: white;
+}

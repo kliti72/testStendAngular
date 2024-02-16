@@ -1,10 +1,8 @@
 footer {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    z-index: 2;
+    margin-top: 2em;
+    border-top: 2px solid orange;
     padding: 0.5em;
-    padding-bottom: 1em;
-    width: 100%;
-    padding-left: 2em;
+    border-bottom: 2px solid red;
+    bottom: 0;
+    width: 94%;
 }

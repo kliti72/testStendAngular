@@ -1,0 +1,25 @@
+{
+    "idForm" : "loginForm",
+    "input" : [
+        {
+            "name" : "email",
+            "classes" : [""],
+            "type" : "email",
+            "placeholder" : "Inserisci qui la tua email.."
+        },
+        {
+            "name" : "password",
+            "classes" : [""],
+            "type" : "password",
+            "placeholder" : "Inserisci qui la tua password.."
+        }
+    ],
+    "button" : [
+        {
+        "id" : "buttonId",
+        "type" : "submit",
+        "text" : "Login",
+        "clickAction" : "effettuaLogin()"
+    }
+    ]
+}

@@ -1,0 +1,23 @@
+.inputTextContainer {
+    left: 0;
+    height: 300px;
+    border: none;
+    background: transparent;
+    padding: 0.5em;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    outline: none;
+  }
+
+
+.border {
+    border: 3px dotted orange;
+
+}
+  
+
+
