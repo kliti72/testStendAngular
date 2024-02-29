@@ -3,12 +3,18 @@
         "classes" : ["items"],
         "routerLink" : "/home",
         "routerLinkActive" : "activeMenu",
+        "text" : "Community"
+    },
+    {
+        "classes" : ["items"],
+        "routerLink" : "/home",
+        "routerLinkActive" : "activeMenu",
         "text" : "Write"
     },
     {
         "classes" : ["items"],
         "routerLink" : "/service",
         "routerLinkActive" : "activeMenu",
-        "text" : "Show old text"
+        "text" : "MyNote "
     }
 ]

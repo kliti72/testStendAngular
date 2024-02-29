@@ -2,7 +2,7 @@
     "idForm" : "loginForm",
     "input" : [
         {
-            "name" : "email",
+            "name" : "wdadaw",
             "classes" : [""],
             "type" : "email",
             "placeholder" : "Inserisci qui la tua email.."

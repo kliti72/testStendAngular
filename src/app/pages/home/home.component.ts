@@ -1,5 +1,5 @@
 import { Component, numberAttribute } from '@angular/core';
-import { SaveNoteService } from '../../service/save-note.service';
+import { SaveNoteService } from '../../service/notes/save-note.service';
 
 @Component({
   selector: 'app-home',

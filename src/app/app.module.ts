@@ -19,6 +19,10 @@ import { CounterComponent } from './component/counter/counter.component';
 import { NotifyComponent } from './component/notify/notify.component';
 import { NoteCardComponent } from './component/note-card/note-card.component';
 import { InputComponent } from './component/input/input.component';
+import { ShowNotePagesComponent } from './pages/show-note-pages/show-note-pages.component';
+import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
+import { InputChangeListenerDirective } from './component/directive/input-change-listener.directive';
+import { OnChangeDirective } from './component/directive/on-change.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { InputComponent } from './component/input/input.component';
     CounterComponent,
     NotifyComponent,
     NoteCardComponent,
-    InputComponent
+    InputComponent,
+    ShowNotePagesComponent,
+    BreadcrumbComponent,
+    InputChangeListenerDirective,
+    OnChangeDirective
   ],
   imports: [
     BrowserModule,

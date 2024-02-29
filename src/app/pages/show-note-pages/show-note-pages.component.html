@@ -1,0 +1,20 @@
+<div class="noteFullPages">
+    <app-title
+    [title] = "'Titolo nota'"
+    [class] = "['subTitleNota']">
+    </app-title>
+
+
+   <span class="titleNote"> {{ title }} </span> 
+
+    <span class="description">  
+        {{ description }}
+    </span>
+
+    <app-button
+    (click) = "backToService()"
+    [textInfo] = "'Torna indietro'"
+    [classes] = "['buttoneNota']"
+    [routerLink] = "'/service'">
+    </app-button>
+</div>

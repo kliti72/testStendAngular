@@ -5,6 +5,8 @@
     padding: 1em;
     border-radius: 10px;
     margin-top: 0.5em;
+    overflow-wrap: break-word;
+
 
 }
 
