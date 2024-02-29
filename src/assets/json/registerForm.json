@@ -2,22 +2,28 @@
     "idForm" : "registerForm",
     "input" : [
         {
+            "id" : "email",
             "name" : "email",
-            "classes" : [""],
+            "classes" : ["email"],
             "type" : "email",
-            "placeholder" : "Inserisci qui la tua email.."
+            "placeholder" : "Inserisci qui la tua email..",
+            "onInputChange" : "this.handleInputChange.bind(this)"
         },
         {
+            "id" : "repeatEmail",
             "name" : "ripeti email",
-            "classes" : [""],
+            "classes" : ["repeatEmail"],
             "type" : "email",
-            "placeholder" : "Ripeti qui la tua email.."
+            "placeholder" : "Ripeti qui la tua email..",
+            "onInputChange" : "this.handleInputChange.bind(this)"
+
         },
         {
             "name" : "password",
             "classes" : [""],
             "type" : "password",
-            "placeholder" : "Inserisci qui la tua password.."
+            "placeholder" : "Inserisci qui la tua password..",
+            "onInputChange" : "this.handleInputChange.bind(this)"
         }
     ],
     "button" : [

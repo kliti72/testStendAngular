@@ -1,7 +1,33 @@
 .submitText {
     padding: 1em;
-    color: white;
-    background-color: orange;
+    color: rgb(227, 92, 2);
     margin: 1em;
     display: block;
+    border: 3px solid rgba(255, 68, 0, 0.922);
+    border-radius: 10px;
+    transition: all 0.16s;
+}
+
+.submitText:hover {
+    background-color: rgba(255, 68, 0, 0.922);
+    color: white;
+}
+
+
+.buttoneNota {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 183, 38);
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 0.5em;
+    color: rgb(16, 16, 16);
+    border-radius: 5px;
+}
+
+.buttoneNota:hover {
+    color: rgb(255, 255, 255);
+    background-color: orange;
 }

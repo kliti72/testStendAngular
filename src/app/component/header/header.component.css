@@ -1,3 +1,5 @@
+
+
 .header {
     display: flex;
     flex-direction: row;
@@ -60,7 +62,7 @@
 .login:hover::before {
     content: " ";
     position: absolute;
-    background-color: rgb(162, 199, 14);
+    background-color: rgb(255, 157, 10);
     height: 2px;
     color: black;
     cursor: pointer;
@@ -73,7 +75,7 @@
 .register:hover::before {
     content: " ";
     position: absolute;
-    background-color: rgb(10, 10, 212);
+    background-color: rgb(255, 153, 0);
     height: 2px;
     color: black;
     cursor: pointer;
@@ -119,6 +121,10 @@
     }
     .menu_list {
         font-size: 1.7em;
+    }
+
+    .items {
+        font-size: 0.6em;
     }
     
 

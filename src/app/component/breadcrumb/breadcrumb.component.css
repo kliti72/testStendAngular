@@ -1,0 +1,18 @@
+.breadcrumb {
+    color: rgb(95, 95, 95);
+    padding: 0.8em;
+    margin: auto;
+    text-align: left;
+    color: white;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    background-color: rgb(255, 99, 9);
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 300px){
+    .breadcrumb {
+        font-size: 0.8em;
+    }
+}

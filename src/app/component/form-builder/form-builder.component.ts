@@ -1,10 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { InputChangeListenerDirective } from '../directive/input-change-listener.directive';
 
 @Component({
   selector: 'app-form-builder',
   templateUrl: './form-builder.component.html',
-  styleUrl: './form-builder.component.css'
+  styleUrl: './form-builder.component.css',
+  
 })
 export class FormBuilderComponent implements OnInit {
 
@@ -12,10 +14,11 @@ export class FormBuilderComponent implements OnInit {
   @Input() idForm : string = "";
 
   @Input() input : {
+    id : string,
     name : string,
     classes : string[],
     type : string,
-    placeholder: string
+    placeholder: string,
   }[] = [];
 
   @Input() button : {
@@ -37,4 +40,10 @@ export class FormBuilderComponent implements OnInit {
     })
     
   }
+
+  onInputChange(inputId: string, value: string): void {
+    console.log(`Input ${inputId} changed to: ${value}`);
+    // Puoi fare qualsiasi altra operazione qui, come aggiornare un modello di dati
+  }
+  
 }

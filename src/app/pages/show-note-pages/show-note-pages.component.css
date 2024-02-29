@@ -1,0 +1,22 @@
+.noteFullPages {
+    display: block;
+    margin: 1em;
+    overflow-wrap: break-word;
+}
+
+.subTitleNota {
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+}
+
+.titleNote {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.description {
+    display: block;
+    
+}
