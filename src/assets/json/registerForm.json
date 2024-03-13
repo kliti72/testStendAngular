@@ -1,6 +1,14 @@
 {
-    "idForm" : "registerForm",
+    "id" : "registerForm",
     "input" : [
+        {
+            "id" : "nome",
+            "name" : "Nome",
+            "classes" : ["email"],
+            "type" : "text",
+            "placeholder" : "Inserisci qui il tuo nome..",
+            "onInputChange" : "this.handleInputChange.bind(this)"
+        },
         {
             "id" : "email",
             "name" : "email",
@@ -19,6 +27,7 @@
 
         },
         {
+            "id" : "password",
             "name" : "password",
             "classes" : [""],
             "type" : "password",

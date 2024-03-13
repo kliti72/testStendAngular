@@ -1,6 +1,8 @@
 import { Component, numberAttribute } from '@angular/core';
-import { SaveNoteService } from '../../service/notes/save-note.service';
-
+import { SaveNoteService } from '../../service/notes/note.service';
+import { notesDTO } from '../../dto/notesDTO';
+import { CookieService } from 'ngx-cookie-service';
+import { userDTO } from '../../dto/userDTO';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,8 +16,9 @@ export class HomeComponent {
   button : string = '';
   title : string = '';
   notifica : boolean = false;
+  userId = this.cookie.get("userId");
 
-  constructor(private saveService : SaveNoteService) {
+  constructor(private saveService : SaveNoteService, private cookie : CookieService) {
   }
 
   updateCounter(value : string){
@@ -27,13 +30,30 @@ export class HomeComponent {
   }
 
   saveNote(){
-    let title = this.title;
-    let data = this.value;
+    
+    let note = new notesDTO();
+    
+    note.description = this.value;
+    note.title = this.title;
 
-    this.saveService.saveData(title, data);
+    let userId = parseInt(this.userId);
+    this.saveService.insertNotes(userId, note);
+
+    console.log("Nota", note, "Salvata")
+
+
+    this.saveService.insertNotes(userId, note).subscribe
+    ({
+      next: (response) => {
+        console.log("risposta ", response)
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    });
+
     this.notifica = true;
     
-
     setTimeout(() => {
       this.notifica = false;
     }, 3000);

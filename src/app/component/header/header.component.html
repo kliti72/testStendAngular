@@ -1,35 +1,31 @@
 <div class="header">
-    
+
     <div class="container_logo">
-        <app-title 
-            [classi] = "['logo-text']"
-            [title] = "'Note Writer'"
-        ></app-title>    
+        <app-button [textInfo]="'back to explore'" [classes]="['explore', 'userHeaderText']" [routerLink]="'/home'"
+            [routerLinkActive]="'activeToBack'">
+
+        </app-button>
+
+        <app-button [textInfo]="'Now Note Only'" [classes]="['explore', 'userHeaderText', 'titleNow']"
+            [routerLink]="'/home'" [routerLinkActive]="'activeHome'"> </app-button>
     </div>
 
-    <div class="container_menu">
-        <app-ul-list >
-        </app-ul-list>
-    </div>
 
     <div class="container_user">
 
-        <app-button
-            [textInfo] = "'Login'"
-            [classes] = "['login', 'userHeaderText']"
-            [routerLink] = "'/login'"
-            [routerLinkActive] = "'active'"
-            >
+        <app-button *ngIf="!isCookiePresent" [textInfo]="'Login'" [classes]="['login', 'userHeaderText']"
+            [routerLink]="'/login'" [routerLinkActive]="'active'">
         </app-button>
 
-        <app-button
-            [textInfo] = "'Registrati'"
-            [classes] = "['register', 'userHeaderText']"
-            [routerLink] = "'/register'"
-            [routerLinkActive] = "'active'"
-            >
+        <app-button *ngIf="!isCookiePresent" [textInfo]="'Registrati'" [classes]="['register', 'userHeaderText']"
+            [routerLink]="'/register'" [routerLinkActive]="'active'">
         </app-button>
-        
+
     </div>
-</div>
 
+
+    <div *ngIf="isCookiePresent">
+        <app-header-profile></app-header-profile>
+    </div>
+
+</div>

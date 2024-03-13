@@ -1,13 +1,15 @@
 {
-    "idForm" : "loginForm",
+    "id" : "loginForm",
     "input" : [
         {
-            "name" : "wdadaw",
+            "id" : "email",
+            "name" : "email",
             "classes" : [""],
             "type" : "email",
             "placeholder" : "Inserisci qui la tua email.."
         },
         {
+            "id" : "password",
             "name" : "password",
             "classes" : [""],
             "type" : "password",

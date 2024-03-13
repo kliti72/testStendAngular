@@ -1,3 +1,8 @@
+.card_container {
+    width: 80%;
+    margin: auto;
+}
+
 .card {
     display: block;
     margin: 0;
@@ -6,6 +11,7 @@
     border-radius: 10px;
     margin-top: 0.5em;
     overflow-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.813);
 
 
 }
@@ -19,6 +25,8 @@
     display: block;
     text-transform: capitalize;
     justify-content: space-evenly;
+    font-size: 0.8em;
+    margin-top: 0.5em;
 
 }
 .readNote {

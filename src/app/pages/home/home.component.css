@@ -1,11 +1,20 @@
+.border {
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  margin-top: 0.5em;
+  background-color: rgb(236, 235, 235);
+  
+}
+
+
+
 .inputTextContainer {
     left: 0;
-    height: 300px;
     border: none;
     background: transparent;
     padding: 0.5em;
     width: 90%;
-    height: 400px;
     margin: auto;
     display: block;
     margin-top: 1em;
@@ -14,12 +23,15 @@
   }
 
 
-.border {
-    background-color: #ffffff;
-    border: 3px solid rgba(255, 111, 0, 0.971);
-    border-radius: 5px;
-
+.flexCounterButton {
+    display: flex;
+    flex-direction: initial;
 }
-  
 
+
+.flexCounter {
+  display: flex;
+  flex: 1;
+  margin-top: 0.5em;
+}
 

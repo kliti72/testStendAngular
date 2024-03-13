@@ -3,6 +3,8 @@
 
 <div class="border">
 
+
+
 <app-input
     (change)="updateTitle($event)"
     [type] = "'text'"
@@ -10,6 +12,8 @@
     [name] = "title"
 >
 </app-input>
+
+
 
 <textarea 
     [(ngModel)] = "value"
@@ -19,17 +23,30 @@
     placeholder="Scrivi la tua nota">
 </textarea>
 
-<app-counter 
-[conteggio] = "conteggio"
-> </app-counter>
+<div class="flexCounterButton">
 
-<app-button 
-    (click)="saveNote()"
-    [textInfo] = "'Salva questa nota'"
-    [classes] = "['submitText']"
-    [routerLink] = "'/home'"
-    [routerLinkActive] = "'/homeActive'">
-</app-button>
+    <div class="flexCounter">
+        <app-counter 
+        [conteggio] = "conteggio"
+        > </app-counter>
+        
+    </div>
+
+    <div class="flexButton">
+
+    <app-button 
+        (click)="saveNote()"
+        [textInfo] = "'Pubblica nota'"
+        [classes] = "['submitText']"
+        [routerLink] = "'/home'"
+        [routerLinkActive] = "'/homeActive'">
+    </app-button>
+
+    </div>
+
+</div>
+
+
 
 <app-notify
     [classes] = "notifica ? ['notify', 'display'] : ['notify']"
@@ -40,3 +57,18 @@
 
     
 </div>
+
+<app-user-public-notes>
+
+</app-user-public-notes>
+
+<app-user-public-notes>
+
+</app-user-public-notes>
+
+<app-user-public-notes>
+
+</app-user-public-notes>
+
+
+<app-setting></app-setting>

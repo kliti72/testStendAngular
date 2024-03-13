@@ -1,16 +1,18 @@
 import { userDTO } from "./userDTO"
 
 export class notesDTO {
-    id : bigint;
+    id? : number;
     title : string;
     description : string;
-    user : userDTO;
+    user? : userDTO;
 
-    constructor(id: bigint, title : string, description : string, user : userDTO){
-        this.id=id;
-        this.title=title;
-        this.description=description;
-        this.user=user;
+    constructor();
+    constructor(title : string, description : string)
+    constructor(title? : string, description? : string, user? : userDTO, id?: number){
+        this.id=id || 0;
+        this.title=title || '';
+        this.description=description || '';
+        this.user=user || new userDTO;
     }
     
 }

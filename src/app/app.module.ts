@@ -6,7 +6,6 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ServiceComponent } from './pages/service/service.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { TitleComponent } from './component/title/title.component';
 import { ButtonComponent } from './component/button/button.component';
@@ -19,10 +18,14 @@ import { CounterComponent } from './component/counter/counter.component';
 import { NotifyComponent } from './component/notify/notify.component';
 import { NoteCardComponent } from './component/note-card/note-card.component';
 import { InputComponent } from './component/input/input.component';
-import { ShowNotePagesComponent } from './pages/show-note-pages/show-note-pages.component';
 import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
-import { InputChangeListenerDirective } from './component/directive/input-change-listener.directive';
-import { OnChangeDirective } from './component/directive/on-change.directive';
+import { InputChangeListenerDirective } from './directive/input-change-listener.directive';
+import { OnChangeDirective } from './directive/on-change.directive';
+import { HeaderProfileComponent } from './component/header-profile/header-profile.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MyNotesComponent } from './pages/my-notes/my-notes.component';
+import { UserPublicNotesComponent } from './component/user-public-notes/user-public-notes.component';
+import { SettingComponent } from './component/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,6 @@ import { OnChangeDirective } from './component/directive/on-change.directive';
     FooterComponent,
     LoginComponent,
     HomeComponent,
-    ServiceComponent,
     RegisterComponent,
     TitleComponent,
     ButtonComponent,
@@ -41,23 +43,27 @@ import { OnChangeDirective } from './component/directive/on-change.directive';
     NotifyComponent,
     NoteCardComponent,
     InputComponent,
-    ShowNotePagesComponent,
     BreadcrumbComponent,
     InputChangeListenerDirective,
-    OnChangeDirective
+    OnChangeDirective,
+    HeaderProfileComponent,
+    MyNotesComponent,
+    UserPublicNotesComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
   exports: [
     FooterComponent,
-    ButtonComponent,
+    ButtonComponent
   ]
 })
 export class AppModule { }

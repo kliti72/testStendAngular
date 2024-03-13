@@ -1,17 +1,21 @@
-export class userDTO {
-    id : bigint;
-    name : string;
-    email : string;
-    password : string;
-    role : string;
+import { roleDTO } from "./roleDTO";
 
-    constructor(id: bigint, name: string, email: string, password : string, role : string) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.role = role;
-    
+export class userDTO {
+    id? : number;
+    name? : string;
+    email? : string;
+    password? : string;
+    role : roleDTO;
+
+    constructor();
+    constructor(email : string, password : string);
+    constructor(email : string, password : string, name?: string, role? : roleDTO, id?: number);
+    constructor(email? : string, password? : string, name?: string, role? : roleDTO, id?: number){
+        this.id = id || 0;
+        this.name = name || '';
+        this.email = email || '';
+        this.password = password || '';
+        this.role = role || new roleDTO(2, "GUEST");
     }
 
 }

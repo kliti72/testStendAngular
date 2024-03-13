@@ -1,0 +1,22 @@
+<div class="header_profile">
+   <div class="container_profile containerHeader">
+        <img class="image_profile" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+    </div> 
+    <div class="container_info containerHeader">
+        <a class="name" style="text-decoration: none;" routerLink="/mynotes" 
+        routerLinkActive="mynotes"> {{ name }} </a> 
+        
+        <a class="counterNotes"> {{ numberNotes }} notes </a> 
+    </div>
+
+    <div class="containerMyNotes">
+        <a class="MyNotesProfile" style="text-decoration: none;" routerLink="/mynotes" 
+        routerLinkActive="mynotes"> MyNote </a> 
+    </div>
+
+    <div class="setting">
+        <i class="fa fa-cog" aria-hidden="true" style="color: white;"></i>
+
+    </div>
+
+</div>

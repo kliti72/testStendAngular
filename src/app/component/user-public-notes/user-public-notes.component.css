@@ -1,0 +1,140 @@
+
+.header_profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8em;
+    margin-left: auto;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+.container_profile {
+    border: 2px solid rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 360px;
+}
+
+.image_profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+}
+
+.name {
+    font-weight: bold;
+    color: white;
+}
+
+.counterNotes {
+    font-size: 0.8em;
+    color: rgb(220, 220, 220);
+}
+
+.container_info {
+    display: flex;
+    flex-direction: column;
+    flex-direction: end;
+    margin: 0.7em;
+    justify-content: left;
+    text-align: left;
+    flex: 1;
+}
+
+.containerMyNotes {
+    flex: end;
+    flex-direction: end;
+
+}
+.setting {
+    cursor: pointer;
+    margin-top: 1.2em;
+    margin-left: 0em;
+    margin-right: 0;
+    
+}
+
+.MyNotesProfile {
+    display: inline-block;
+    margin-top: 0.6em;
+    margin-right: 1em;
+    border: 2px solid #7cbcfc50;
+    padding: 0.5em;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.black {
+    color: black;
+}
+
+.MyNotesProfile:hover {
+    background-color: rgb(255, 68, 0);
+    color: white;
+
+}
+
+.boxDescription {
+    display: block;
+}
+
+
+.box_notes_user {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.notesDescription {
+    font-size: 0.8em;
+    color: rgb(43, 43, 43);
+    justify-content: baseline;
+    padding: 1em;
+    display: block;
+}
+
+.showProfileNotes {
+    font-size: 0.8em;
+    margin: 2em;
+    display: inline-block;
+    text-decoration: none;
+
+
+}
+
+.likeCommentContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.heartBox {
+    font-size: 1.3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.commentBox {
+    font-size: 1.3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.heartBox:hover {
+    color: blue;
+}
+
+.commentBox:hover {
+    color: blue;
+}

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { InputChangeListenerDirective } from '../directive/input-change-listener.directive';
+import { InputChangeListenerDirective } from '../../directive/input-change-listener.directive';
 
 @Component({
   selector: 'app-form-builder',
@@ -11,7 +11,7 @@ import { InputChangeListenerDirective } from '../directive/input-change-listener
 export class FormBuilderComponent implements OnInit {
 
   @Input() url : string = '';
-  @Input() idForm : string = "";
+  @Input() id : string = "";
 
   @Input() input : {
     id : string,
@@ -34,16 +34,11 @@ export class FormBuilderComponent implements OnInit {
 
     this.http.get<any>(this.url).subscribe(data => {
       console.log(data)
-      this.idForm = data.idForm;
+      this.id = data.id;
       this.input = data.input;
       this.button = data.button;
     })
     
-  }
-
-  onInputChange(inputId: string, value: string): void {
-    console.log(`Input ${inputId} changed to: ${value}`);
-    // Puoi fare qualsiasi altra operazione qui, come aggiornare un modello di dati
   }
   
 }

@@ -1,8 +1,8 @@
-export class envoirment {
-    api : string = "http:localhost:8080/"
+export class Envoirment {
+    api : string = "http://localhost:8080/"
 
     generateApiWithRoute(route : string){
-        return this.api + "/" + route;
+        return this.api + route;
     }
 
 }

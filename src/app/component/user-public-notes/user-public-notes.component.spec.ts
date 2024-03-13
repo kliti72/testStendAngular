@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowNotePagesComponent } from './show-note-pages.component';
+import { UserPublicNotesComponent } from './user-public-notes.component';
 
-describe('ShowNotePagesComponent', () => {
-  let component: ShowNotePagesComponent;
-  let fixture: ComponentFixture<ShowNotePagesComponent>;
+describe('UserPublicNotesComponent', () => {
+  let component: UserPublicNotesComponent;
+  let fixture: ComponentFixture<UserPublicNotesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ShowNotePagesComponent]
+      declarations: [UserPublicNotesComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ShowNotePagesComponent);
+    fixture = TestBed.createComponent(UserPublicNotesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

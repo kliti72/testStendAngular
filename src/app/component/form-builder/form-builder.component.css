@@ -6,6 +6,8 @@
     margin: auto;
     margin-top: 3.5em;
     font-weight: bold;
+    transition: all 1.5s;
+
 }
 
 .inputBox {
@@ -14,12 +16,14 @@
     padding: 0.5em;
     margin-top: 1em;
     border-radius: 15px;
+    transition: all 1.5s;
 }
 
 .inputText {
     color: rgb(14, 14, 14);
     font-size: 0.8emem;
     font-weight: bold;
+    transition: all 1.5s;
 
 }
 
@@ -32,6 +36,7 @@
     border-radius: 5px;
     padding-left: 0.5em;
     padding-right: 1.5em;
+    transition: all 1s;
 
 }
 

@@ -1,0 +1,43 @@
+.hover {
+    position: absolute;
+    height: 400px;
+    width: 69%;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+    margin: auto;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 5px;
+    opacity: 95%;
+}
+
+.welcomeToSetting {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5em;
+    font-size: 1.3em;
+}
+
+.firstBox {
+    flex: 1;
+}
+
+.secondBox {
+    margin-right: 0.5em;
+}
+
+.editBox {
+    cursor: pointer;
+}
+
+.editBox:hover {
+    color: blue;
+}

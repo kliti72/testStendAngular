@@ -1,8 +1,8 @@
 export class roleDTO {
-    id : bigint;
+    id? : number;
     role : string;
 
-    constructor(id : bigint, role : string){
+    constructor(id : number, role : string){
         this.id = id;
         this.role = role;
     }

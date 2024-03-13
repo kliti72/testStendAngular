@@ -1,15 +1,18 @@
 .submitText {
     padding: 1em;
-    color: rgb(227, 92, 2);
     margin: 1em;
     display: block;
-    border: 3px solid rgba(255, 68, 0, 0.922);
     border-radius: 10px;
     transition: all 0.16s;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 0.7em;
+    display: inline-block;
+    color: blueviolet;
 }
 
 .submitText:hover {
-    background-color: rgba(255, 68, 0, 0.922);
+    background-color: rgba(14, 78, 120, 0.922);
     color: white;
 }
 
@@ -18,7 +21,7 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    background-color: rgb(255, 183, 38);
+    background-color: rgb(38, 215, 255);
     padding: 0.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;

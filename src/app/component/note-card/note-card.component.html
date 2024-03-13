@@ -1,5 +1,9 @@
-<div class="card" *ngFor="let card of noteSlice">
-    <a class="titleCard"> {{ card.title }} </a>
-    <a class="descriptionCard"> {{ card.description }} </a>
-    <a class="readNote" (click)="readAllNote(card.title)"> Leggi tutta la nota </a>
+<div class="card_container">
+
+<div class="card">
+    <a class="titleCard"> {{ title }} </a>
+    <a class="descriptionCard"> {{ description }} </a>
+</div>
+
+    
 </div>
